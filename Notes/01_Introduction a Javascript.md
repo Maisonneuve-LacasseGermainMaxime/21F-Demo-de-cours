@@ -51,3 +51,5 @@ La documentation officielle du langage JavaScript est disponible sur le site [MD
 ## Ressources supplémentaires
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hdI2bqOjy3c?si=s465r3WWDnh_F8VD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/hdI2bqOjy3c/0.jpg)](https://www.youtube.com/watch?v=hdI2bqOjy3c)
