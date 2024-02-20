@@ -43,3 +43,11 @@ Aujourd'hui, la plupart des navigateurs modernes prennent en charge les fonction
 Le site [Can I Use](https://caniuse.com/) est une ressource très utile pour vérifier la compatibilité des fonctionnalités JavaScript avec les différents navigateurs. Il permet de savoir si une fonctionnalité est prise en charge par un navigateur donné, et dans quelle version du navigateur elle a été ajoutée.
 
 Le site répertorie également les fonctionnalités qui sont en cours de développement ou qui sont en cours de discussion dans le cadre du standard ECMAScript. Cela est également le cas pour les fonctionnalités CSS et HTML.
+
+## Documentation officielle
+
+La documentation officielle du langage JavaScript est disponible sur le site [MDN Web Docs](https://developer.mozilla.org/fr/docs/Web/JavaScript). Il s'agit d'une ressource très complète qui couvre tous les aspects du langage, y compris les fonctionnalités de la dernière version du standard ECMAScript.
+
+## Ressources supplémentaires
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hdI2bqOjy3c?si=s465r3WWDnh_F8VD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
