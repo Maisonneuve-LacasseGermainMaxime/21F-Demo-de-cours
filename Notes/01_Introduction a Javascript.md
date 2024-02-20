@@ -48,8 +48,3 @@ Le site répertorie également les fonctionnalités qui sont en cours de dévelo
 
 La documentation officielle du langage JavaScript est disponible sur le site [MDN Web Docs](https://developer.mozilla.org/fr/docs/Web/JavaScript). Il s'agit d'une ressource très complète qui couvre tous les aspects du langage, y compris les fonctionnalités de la dernière version du standard ECMAScript.
 
-## Ressources supplémentaires
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hdI2bqOjy3c?si=s465r3WWDnh_F8VD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/hdI2bqOjy3c/0.jpg)](https://www.youtube.com/watch?v=hdI2bqOjy3c)
