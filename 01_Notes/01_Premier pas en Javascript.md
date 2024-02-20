@@ -1,4 +1,19 @@
-# Premier pas en JavaScript
+# Premiers pas en JavaScript
+
+-   [Rédaction de scripts JavaScript](#rédaction-de-scripts-javascript)
+-   [Variables](#variables)
+    -   [Déclaration de variables](#déclaration-de-variables)
+        -   [`let`](#let)
+        -   [`const`](#const)
+        -   [`var`](#var)
+    -   [Nommage des variables](#nommage-des-variables)
+-   [Types de données](#types-de-données)
+    -   [Les chaînes de caractères](#les-chaînes-de-caractères)
+        -   [Littéraux de gabarits](#littéraux-de-gabarits)
+-   [Sélectionner un élément HTML](#sélectionner-un-élément-html)
+-   [Modifier le texte d'un élément HTML](#modifier-le-texte-dun-élément-html)
+    -   [Chainage de méthodes](#chainage-de-méthodes)
+-   [Ajouter des commentaires](#ajouter-des-commentaires)
 
 ## Rédaction de scripts JavaScript
 
@@ -116,3 +131,16 @@ document.querySelector("h1").textContent = "Hello, world!";
 ```
 
 Cependant, le chainage de méthodes peut rendre le code difficile à lire. Il est préférable de stocker le résultat de la première méthode dans une variable, puis d'appeler la deuxième méthode sur cette variable.
+
+## Ajouter des commentaires
+
+En JavaScript, on peut ajouter des commentaires sur une seule ligne avec `//` ou sur plusieurs lignes avec `/*` et `*/`.
+
+```javascript
+// Ceci est un commentaire sur une seule ligne
+
+/*
+Ceci est un commentaire
+sur plusieurs lignes
+*/
+```
