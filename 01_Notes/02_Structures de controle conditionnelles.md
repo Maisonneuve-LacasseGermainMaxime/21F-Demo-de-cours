@@ -5,7 +5,7 @@ Les structures de contrôle permettent de contrôler le flux d'exécution d'un p
 Il existe deux types de structures de contrôle en JavaScript :
 
 -   Les `structures de contrôle conditionnelles` (if, else if, else, switch).
--   Les `structures de contrôle itératives` ou boucles (for, while, do while).
+-   Les `structures de contrôle itératives` ou `boucles` (for, while, do while).
 
 Nous verrons les boucles dans un prochain cours.
 
