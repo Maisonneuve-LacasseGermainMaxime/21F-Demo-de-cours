@@ -1,26 +1,17 @@
-# Exercice - cours 2 - Structures conditionnelles
+# Exercice - cours 3 - Structures conditionnelles
 
 ## Consignes
 
-Vous devez créer un script simple qui simule l'inscription d'un nouvel utilisateur. En utilisant, les techniques de débogage, vous devez vérifier que le script fonctionne correctement.
+Nous commençons à ajouter de l'interactivité à la page. Vous devrez donner de la rétroaction à l'utilisateur en utilisant les structures conditionnelles et les fonctions.
 
 ## Étapes
 
-1. Demander à l'utilisateur de saisir un courriel
+1. Sélectionner individuellement chaque div album. Essayez de trouver un moyen de les sélectionner sans modifier le HTML. Réviser l'aide-mémoire sur les sélecteurs CSS si nécessaire. (cours 1)
 
-    1. Si le courriel est vide, afficher un message d'erreur
-    2. Enregistrer le courriel dans une variable
+2. Écrire une fonction qui change le style de cet élément.
 
-2. Demander l'âge de l'utilisateur 2. Enregistrer l'âge dans une variable
-3. Demander à l'utilisateur de saisir un mot de passe
-    1. Si le mot de passe est vide, afficher un message d'erreur
-    2. Enregistrer le mot de passe dans une variable
-4. Demander à l'utilisateur de confirmer le mot de passe une deuxième fois
-    1. Si le mot de passe de confirmation est différent du mot de passe, afficher un message d'erreur
-    2. Enregistrer le mot de passe de confirmation dans une variable
-5. Afficher un message de confirmation si l'inscription est réussie
-6. Afficher les informations de l'utilisateur (courriel, âge et si l'utilisateur est majeur ) si l'inscription est réussie sur la page
+    Ajoutez une bordure de 5px de couleur rouge à l'élément si l'élément n'est pas sélectionné et retirez-la si l'élément est sélectionné.
 
-7. Commenter le script pour expliquer ce que vous avez fait
+    Trouvez une façon de garder en mémoire si chaque élément a déjà une bordure ou non, le code n'a pas besoin d'être optimal. Utilisez les structures conditionnelles pour cela et les opérateurs vus dans le cours 2.
 
-8. Tester le script avec des valeurs différentes pour vous assurer qu'il fonctionne correctement
+3. Ajouter un écouteur de clic à chaque div album. Lorsqu'on clique, déclenchez la fonction. Attention, on ne met pas les parenthèses après le nom de la fonction, sinon elle sera exécutée immédiatement.
