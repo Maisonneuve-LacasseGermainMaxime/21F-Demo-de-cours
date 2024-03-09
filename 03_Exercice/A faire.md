@@ -1,4 +1,4 @@
-# Exercice - cours 3 - Structures conditionnelles
+# Exercice - cours 4 - Les tableaux et les boucles
 
 ## Consignes
 
