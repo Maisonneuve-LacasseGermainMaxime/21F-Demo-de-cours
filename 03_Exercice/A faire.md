@@ -2,16 +2,16 @@
 
 ## Consignes
 
-Nous commençons à ajouter de l'interactivité à la page. Vous devrez donner de la rétroaction à l'utilisateur en utilisant les structures conditionnelles et les fonctions.
+Nous commençons à ajouter de l'interactivité à la page.
 
-## Étapes
+Ouvrez le dossier `assets/img` et observez les images des albums. Le nom des fichier correspond au nom du groupe et de l'album. Les fichiers sont au format `.webp`.
 
-1. Sélectionner individuellement chaque div album. Essayez de trouver un moyen de les sélectionner sans modifier le HTML. Réviser l'aide-mémoire sur les sélecteurs CSS si nécessaire. (cours 1)
+Dans le fichier `main.js`, créer un tableau contenant le nom du groupe. Créer un deuxième tableau contenant le nom de l'album, finalement créer un troisième tableau contenant le nom de l'image. Gardez le même ordre pour les éléments de chaque tableau sinon le code ne fonctionnera pas.
 
-2. Écrire une fonction qui change le style de cet élément.
+Vous devez sélectionner chaque div album
 
-    Ajoutez une bordure de 5px de couleur rouge à l'élément si l'élément n'est pas sélectionné et retirez-la si l'élément est sélectionné.
+Créer une fonction qui modifie cherche dans chaque div album les éléments HTML pour afficher le nom de l'album, le nom du groupe et l'image de l'album. Le code n'a pas besoin de fonctionner pour plus de 3 albums.
 
-    Trouvez une façon de garder en mémoire si chaque élément a déjà une bordure ou non, le code n'a pas besoin d'être optimal. Utilisez les structures conditionnelles pour cela et les opérateurs vus dans le cours 2.
+Vous devez faire une recherche par vous-même pour trouver comment modifier la source d'une image en JavaScript.
 
-3. Ajouter un écouteur de clic à chaque div album. Lorsqu'on clique, déclenchez la fonction. Attention, on ne met pas les parenthèses après le nom de la fonction, sinon elle sera exécutée immédiatement.
+Je ne fournis pas d'étapes pour cet exercice. Commencez par commenter les étapes que vous pensez devoir faire pour réaliser cet exercice et placer le code dessous chaque commentaire.
