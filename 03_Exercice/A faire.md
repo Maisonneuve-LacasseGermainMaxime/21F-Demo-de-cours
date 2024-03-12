@@ -2,16 +2,14 @@
 
 ## Consignes
 
-Nous commençons à ajouter de l'interactivité à la page.
+Vous devez modifier plusieurs éléments HTML à partir d'un tableau de données, de fonctions et de boucles. De plus, vous devrez trier ces éléments au clic d'un bouton et les réafficher.
 
-Ouvrez le dossier `assets/img` et observez les images des albums. Le nom des fichier correspond au nom du groupe et de l'album. Les fichiers sont au format `.webp`.
+1. Sélectionnez tous les éléments `div` de la liste qui ont la classe `album__artiste` et enregistrez-les dans une seule variable.
 
-Dans le fichier `main.js`, créer un tableau contenant le nom du groupe. Créer un deuxième tableau contenant le nom de l'album, finalement créer un troisième tableau contenant le nom de l'image. Gardez le même ordre pour les éléments de chaque tableau sinon le code ne fonctionnera pas.
+2. Créer une fonction `afficherAlbums` servant à afficher les albums dans la page. Cette fonction prendra un deux paramètres : un tableau d'albums et une liste d'éléments HTML. Cette fonction contient une boucle qui utilise la fonction `modifierNom` pour afficher le nom de l'artiste dans chaque élément HTML.
 
-Vous devez sélectionner chaque div album
+3. Créer une fonction `modifierNom` servant à changer le texte d'un élément HTML. Cette fonction prendra deux paramètres : l'élément HTML à modifier et le texte à insérer dans cet élément.
 
-Créer une fonction qui modifie cherche dans chaque div album les éléments HTML pour afficher le nom de l'album, le nom du groupe et l'image de l'album. Le code n'a pas besoin de fonctionner pour plus de 3 albums.
-
-Vous devez faire une recherche par vous-même pour trouver comment modifier la source d'une image en JavaScript.
-
-Je ne fournis pas d'étapes pour cet exercice. Commencez par commenter les étapes que vous pensez devoir faire pour réaliser cet exercice et placer le code dessous chaque commentaire.
+4. Créez une fonction `initialiser` qui sera appelée au chargement de la page. Appelez la fonction
+   `afficherAlbums` avec le tableau d'albums et la liste d'éléments HTML.
+5. Au clic du bouton, triez les albums par ordre alphabétique et réaffichez-les dans la page.

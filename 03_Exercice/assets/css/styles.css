@@ -1,61 +1,113 @@
-@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
 @import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 html,
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-    padding: 3rem;
     font-family: "Teko", sans-serif;
-    background-color: lightgoldenrodyellow;
     color: tomato;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 2rem;
-}
-h3 {
-    color: color-mix(in oklab, tomato 80%, black 20%);
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-header h1 {
+h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    transition: all 350ms;
+}
+a:hover {
+    color: rgb(188, 93, 93);
+    text-decoration: underline;
+}
+a.actif {
+    color: rgb(188, 93, 93);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* ENTETE */
+header {
+    padding: 2rem;
+    background-color: rgba(232, 232, 232, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    gap: 3rem;
+}
+
+nav .logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+nav .nav__liste {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    gap: 2rem;
 }
 
-section h2 + p {
-    margin-bottom: 2rem;
+nav li a {
+    font-size: 1.5rem;
 }
-.logo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-right: 1rem;
+
+main {
+    flex: 1;
+    padding: 2rem;
 }
+
+/* ======== */
 .liste-albums {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-top: 2rem;
 }
 .album {
-    flex-basis: 30%;
-    aspect-ratio: 1/1;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    cursor: pointer;
+    background-color: tomato;
+    min-height: 50px;
+    flex-basis: calc((100% / 3 - 1rem) + (1rem / 3));
+    color: white;
     transition: all 250ms ease-in-out;
 }
 
 .album:hover {
     background-color: #f0f0f0;
+    color: tomato;
     transform: scale(1.05);
     border-radius: 15px;
 }
@@ -64,4 +116,31 @@ section h2 + p {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+}
+
+.section-header .filtres {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-header .filtres .filtre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: tomato;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 350ms;
+}
+
+.section-header .filtres .filtre:hover {
+    background-color: color-mix(in oklab, tomato, black 10%);
+    transform: scale(1.05);
+    text-decoration: underline;
 }
