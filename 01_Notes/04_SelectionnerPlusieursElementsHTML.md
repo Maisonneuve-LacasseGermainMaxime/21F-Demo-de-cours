@@ -30,6 +30,11 @@ let paragraphes = document.querySelectorAll("p");
 paragraphes.forEach(function (paragraphe, index) {
     paragraphe.textContent = "Paragraphe " + index;
 });
+
+// OU avec une boucle for
+for (let i = 0; i < paragraphes.length; i++) {
+    paragraphes[i].textContent = "Paragraphe " + i;
+}
 ```
 
 ## Sélectionner les enfants d'un élément HTML
@@ -45,6 +50,14 @@ let paragraphes = divAlbum.querySelectorAll("p"); // Sélectionne tous les élé
 
 // Pour chaque paragraphe, on sélectionne le span et on modifie le texte
 paragraphes.forEach(function (paragraphe, index) {
-    paragraphe.querySelector("span").textContent = "Paragraphe " + index;
+    const paraHTML = paragraphe.querySelector("span");
+    paraHTML.textContent = "Paragraphe " + index;
 });
+
+// OU avec une boucle for
+
+for (let i = 0; i < paragraphes.length; i++) {
+    const paraHTML = paragraphe.querySelector("span");
+    paraHTML.textContent = "Paragraphe " + i;
+}
 ```
