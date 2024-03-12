@@ -1,16 +1,16 @@
-// Créer un tableau de 3 prix
-// Sélectionner toutes les balises de prix
+// Variables
 
-// Boucle for, forEach
-// Modifier le contenu de la balise de prix
+const chemin = ["assets", "img", "albums"];
+const albums = ["Mezzanine", "Back in Black", "The Dark Side of the Moon", "Abbey Road", "Kind of Blue", "The Wall"];
 
-// Créer une fonction qui prend en paramètre un tableau de prix et qui retourne le prix le plus élevé
-// Appeler la fonction et afficher le prix le plus élevé dans la console
+// const template = `
+// <div class="album" id="">
+//     <img src="assets/img/albums/doors_the_doors.webp" alt="" />
+// </div>`;
 
-// Trier le tableau de prix du plus petit au plus grand
-// Afficher le tableau trié dans la console
+// Créer une fonction qui formatte le chemin des images
+// Créer une fonction qui génère le template HTML et l'injecte dans le DOM
+// Créer une fonction qui affiche les albums au chargement de la page
 
-// Rechercher un élément dans le tableau de prix
-
-// Techniques de débogage
-// opérateur type of
+// Au clic du bouton, vider le contenu du conteneur et réafficher les albums
+// Au clic d'une div album, afficher le id dans la console et afficher l'attribut alt de l'image dans la console
