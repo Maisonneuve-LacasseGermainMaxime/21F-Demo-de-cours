@@ -1,15 +1,18 @@
-# Exercice - cours 4 - Les tableaux et les boucles
+# Exercice - cours 5 - Les chaines de caractères et le HTML
 
 ## Consignes
 
-Vous devez modifier plusieurs éléments HTML à partir d'un tableau de données, de fonctions et de boucles. De plus, vous devrez trier ces éléments au clic d'un bouton et les réafficher.
+Dans le fichier `main.js`, vous devrez générez les liens du pied de page par programmation. Vous avez un tableau contenant le nom du lien.
 
-1. Sélectionnez tous les éléments `div` de la liste qui ont la classe `album__artiste` et enregistrez-les dans une seule variable.
+Vous devrez utiliser les méthodes de chaines de caractères pour générer l'url du lien. Vous devrez également utiliser la méthode `insertAdjacentHTML` pour ajouter les liens dans le pied de page.
 
-2. Créer une fonction `afficherAlbums` servant à afficher les albums dans la page. Cette fonction prendra un deux paramètres : un tableau d'albums et une liste d'éléments HTML. Cette fonction contient une boucle qui utilise la fonction `modifierNom` pour afficher le nom de l'artiste dans chaque élément HTML.
+La fonction doit nettoyer les espaces inutiles et transformer les caractères en minuscules, remplacer les espaces par des tirets et ajouter l'extension `.html` à la fin.
 
-3. Créer une fonction `modifierNom` servant à changer le texte d'un élément HTML. Cette fonction prendra deux paramètres : l'élément HTML à modifier et le texte à insérer dans cet élément.
+### Défi 1
 
-4. Créez une fonction `initialiser` qui sera appelée au chargement de la page. Appelez la fonction
-   `afficherAlbums` avec le tableau d'albums et la liste d'éléments HTML.
-5. Au clic du bouton, triez les albums par ordre alphabétique et réaffichez-les dans la page.
+Vous devez remplacer les accents par leur équivalent non accentué. Faites une recherche et citez vos sources.
+Un indice: vous voulez cherchez quelque chose en lien avec la méthode `normalize` et les `diacritics`.
+
+### Défi 2
+
+Au survol d'un lien, afficher le contenu de l'attribut href dans la console.
