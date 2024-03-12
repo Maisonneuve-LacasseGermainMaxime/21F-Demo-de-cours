@@ -144,3 +144,37 @@ main {
     transform: scale(1.05);
     text-decoration: underline;
 }
+
+.carrousel-conteneur {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.carrousel-conteneur .img-conteneur {
+    flex-basis: 40%;
+    border-radius: 15px;
+    transition: all 350ms;
+    border: 2px solid tomato;
+    min-height: 350px;
+}
+
+.carrousel-conteneur > .btn {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.carrousel-conteneur > .btn span {
+    transition: all 350ms;
+}
+.carrousel-conteneur > .btn span:hover {
+    color: color-mix(in oklab, tomato 60%, black 40%);
+}

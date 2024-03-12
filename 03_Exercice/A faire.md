@@ -1,18 +1,19 @@
-# Exercice - cours 5 - Les chaines de caractères et le HTML
+# Exercice - cours 6 - Les objets
 
 ## Consignes
 
-Dans le fichier `main.js`, vous devrez générez les liens du pied de page par programmation. Vous avez un tableau contenant le nom du lien.
+Créer un carrousel d'images à partir d'un tableau d'objets.
 
-Vous devrez utiliser les méthodes de chaines de caractères pour générer l'url du lien. Vous devrez également utiliser la méthode `insertAdjacentHTML` pour ajouter les liens dans le pied de page.
+## Étapes
 
-La fonction doit nettoyer les espaces inutiles et transformer les caractères en minuscules, remplacer les espaces par des tirets et ajouter l'extension `.html` à la fin.
+1. Créer une fonction `changerImage` qui prend en paramètre l'index de l'image à afficher. Trouvez l'objet correspondant à l'index dans le tableau et affichez l'image dans la balise `img`. Modifiez également l'attribut `alt` de la balise `img` pour afficher la description de l'image.
 
-### Défi 1
+2. Au clic du bouton "Suivant", appeler la fonction `changerImage` en passant l'index de l'image suivante. Si on arrive au dernier élément du tableau, on revient au premier élément.
 
-Vous devez remplacer les accents par leur équivalent non accentué. Faites une recherche et citez vos sources.
-Un indice: vous voulez cherchez quelque chose en lien avec la méthode `normalize` et les `diacritics`.
+3. Au clic du bouton "Précédent", appeler la fonction `changerImage` en passant l'index de l'image précédente. Si on arrive au premier élément du tableau, on revient au dernier élément.
 
-### Défi 2
+4. Au chargement de la page, afficher la première image du tableau.
 
-Au survol d'un lien, afficher le contenu de l'attribut href dans la console.
+## Défi supplémentaire
+
+Au chargement de la page, afficher une image aléatoire du tableau.
