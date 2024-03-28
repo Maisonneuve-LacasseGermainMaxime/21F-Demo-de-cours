@@ -12,7 +12,7 @@
             <nav id="nav-principale">
                 <img src="assets/img/logo_vinyle.png" alt="logo" class="logo" />
                 <ul class="nav__liste">
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#" style="color: tomato; text-decoration: underline">Accueil</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">À propos</a></li>
                 </ul>
@@ -23,15 +23,17 @@
                 <h1>Liste des albums</h1>
                 <div class="section-header">
                     <div class="filtres">
-                        <div class="filtre">Réafficher</div>
+                        <div class="filtre">Filtrer les albums de 15$ et moins</div>
+                        <div class="tri">Trier par ordre alphabétique croissant</div>
+                        <div class="tri">Trier par ordre alphabétique décroissant</div>
                     </div>
                 </div>
 
-                <div class="liste-albums">
-                    <!-- <div class="album">
-                        <img src="assets/img/albums/doors_the_doors.webp" alt="" />
-                    </div> -->
-                </div>
+                <section>
+                    <h2>Album sélectionné</h2>
+                    <p>Artiste:<span class="artiste-selection"></span></p>
+                </section>
+                <div class="liste-albums"></div>
             </section>
         </main>
     </body>
