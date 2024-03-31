@@ -83,9 +83,35 @@ nav li a {
 main {
     flex: 1;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* ======== */
+.bouton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: tomato;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 350ms;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.bouton:hover {
+    background-color: color-mix(in oklab, tomato, black 10%);
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
 .liste-albums {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +121,7 @@ main {
 }
 .album {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -145,36 +172,27 @@ main {
     text-decoration: underline;
 }
 
-.carrousel-conteneur {
-    display: flex;
-    overflow-x: auto;
-    gap: 1rem;
-    padding: 1rem;
-    margin-top: 2rem;
-    background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.carrousel-conteneur .img-conteneur {
-    flex-basis: 40%;
-    border-radius: 15px;
-    transition: all 350ms;
+.panier-achat {
+    min-width: 100%;
     border: 2px solid tomato;
-    min-height: 350px;
-}
-
-.carrousel-conteneur > .btn {
-    flex-basis: 30%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 3rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-.carrousel-conteneur > .btn span {
-    transition: all 350ms;
+.panier-achat .panier-achat__element {
+    display: flex;
+    border: 2px solid teal;
+    padding: 2.5rem;
+    gap: 10px;
+    align-items: flex-start;
+    position: relative;
 }
-.carrousel-conteneur > .btn span:hover {
-    color: color-mix(in oklab, tomato 60%, black 40%);
+
+.panier-achat .panier-achat__element .bouton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px 7px;
+    border-radius: 25px;
 }

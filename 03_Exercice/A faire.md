@@ -1,19 +1,20 @@
-# Exercice - cours 6 - Les objets
+# Exercice - cours 8 - Le DOM
 
 ## Consignes
 
-Créer un carrousel d'images à partir d'un tableau d'objets.
+Créer du contenu dynamique au changement d'un élément du DOM.
 
 ## Étapes
 
-1. Créer une fonction `changerImage` qui prend en paramètre l'index de l'image à afficher. Trouvez l'objet correspondant à l'index dans le tableau et affichez l'image dans la balise `img`. Modifiez également l'attribut `alt` de la balise `img` pour afficher la description de l'image.
+1. Sélectionner le champ nombre par son attribut type et la balise template.
 
-2. Au clic du bouton "Suivant", appeler la fonction `changerImage` en passant l'index de l'image suivante. Si on arrive au dernier élément du tableau, on revient au premier élément.
+2. Ajouter un écouteur d'événement sur le champ nombre de type `change` qui appelle une fonction `changement`.
 
-3. Au clic du bouton "Précédent", appeler la fonction `changerImage` en passant l'index de l'image précédente. Si on arrive au premier élément du tableau, on revient au dernier élément.
+3. Créer une fonction `cloner` qui clône le contenu du template dans la section resume.
 
-4. Au chargement de la page, afficher la première image du tableau.
+4. Créer la fonction `changement` qui affiche dans la console le contenu du champ nombre. Récupérer la valeur du champ nombre, vider la section resume et cloner le contenu du template dans la section resume autant de fois que la valeur du champ nombre.
 
-## Défi supplémentaire
+**Défi supplémentaire**
+Après avoir ajouté le contenu du template dans la section resume, ajouter un écouteur d'événement sur le bouton supprimer à l'intérieur du contenu cloné.
 
-Au chargement de la page, afficher une image aléatoire du tableau.
+Au clic, récupérer le parent du bouton et le supprimer.
