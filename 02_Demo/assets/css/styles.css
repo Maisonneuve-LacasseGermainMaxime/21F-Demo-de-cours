@@ -196,3 +196,52 @@ main {
     padding: 5px 7px;
     border-radius: 25px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+form .groupe-champs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+form input {
+    padding: 0.5rem;
+    border-radius: 25px;
+    border: 2px solid tomato;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    transition: all 350ms;
+    width: fit-content;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: color-mix(in oklab, tomato, black 10%);
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+form input[type="submit"]:disabled {
+    background-color: grey;
+    pointer-events: none;
+}
+
+form input:invalid {
+    border-color: red;
+}
+
+form input:valid {
+    border-color: green;
+}
