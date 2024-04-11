@@ -218,22 +218,28 @@ form input {
     outline: none;
 }
 
-form input[type="submit"] {
+form input[type="submit"],
+form button {
+    padding: 0.5rem;
     background-color: tomato;
     color: white;
     cursor: pointer;
     transition: all 350ms;
     width: fit-content;
     cursor: pointer;
+    border: none;
+    border-radius: 10px;
 }
 
-form input[type="submit"]:hover {
+form input[type="submit"]:hover,
+form button:hover {
     background-color: color-mix(in oklab, tomato, black 10%);
     transform: scale(1.05);
     text-decoration: underline;
 }
 
-form input[type="submit"]:disabled {
+form input[type="submit"]:disabled,
+form button:disabled {
     background-color: grey;
     pointer-events: none;
 }
@@ -244,4 +250,24 @@ form input:invalid {
 
 form input:valid {
     border-color: green;
+}
+
+section {
+    width: 90vw;
+    height: 30vh;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid tomato;
+    display: flex;
+    flex-direction: column;
+}
+
+section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+/* AJOUTER DES CLASSES POUR CACHER et DÉSACTIVER */
+.invisible {
 }

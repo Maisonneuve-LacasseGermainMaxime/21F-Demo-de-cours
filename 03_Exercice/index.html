@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cours 5</title>
+        <title>Cours 10</title>
         <link rel="stylesheet" href="assets/css/styles.css" />
         <!-- Lien de la library font-awesome -->
         <link
@@ -13,6 +13,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <script src="assets/js/main.js" defer></script>
     </head>
     <body>
         <header>
@@ -26,20 +27,16 @@
             </nav>
         </header>
         <main>
-            <form action="">
-                <section data-page="1">
-                    <label for="quantite">Quantité (min:0, max:5)</label>
-                    <input type="number" step="1" value="0" min="0" max="5" />
-                </section>
-                <section class="resume">
-                    <template>
-                        <div class="panier-achat__element">
-                            <h1>Élément ajouté</h1>
-                            <span class="bouton fa fa-times"></span>
-                        </div>
-                    </template>
-                </section>
-            </form>
+            <label for="commentaires"
+                >Commentaires
+                <div class="infos-bubble fas fa-question-circle interactif">
+                    <div class="infos">
+                        Lorsque vous envoyez un commentaire, vous acceptez que vos données soient stockées et utilisées
+                        par ce site web. Pour plus d'informations, consultez notre politique de confidentialité.
+                    </div>
+                </div>
+            </label>
+            <textarea name="commentaires" id="commentaires" cols="30" rows="10"></textarea>
         </main>
         <footer></footer>
     </body>

@@ -1,15 +1,25 @@
-//==== Éléments HTML
-const panierAchat = document.querySelector(".panier-achat");
-//Sélectionner avec attribut, id,classe
-//Sélectionner avec ID
+// Variables
+let sectionActuelle = 0;
 
-//Fonction pour cloner un élément du panier achat
-//Au double-clic, ajouter l'élément au panier achat
-//Sélectionner le parent et supprimer au survol
+// Éléments HTML
+// - Formulaire
+// - Sections
+// - Boutons
 
-//=== Fonctions
-function initialiser() {}
+//Fonctions
+function init() {}
 
-function clonerElement() {}
+function onSubmit() {}
 
-initialiser();
+//Désactiver le bouton précédent si on est sur la première section
+//Désactiver le bouton suivant si on est sur la dernière section
+function afficherSection() {}
+
+function toutCacher() {}
+
+function avancerSection() {}
+
+function reculerSection() {}
+
+// Exécution
+init();
