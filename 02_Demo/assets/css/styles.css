@@ -208,17 +208,19 @@ form .groupe-champs {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: space-between;
     align-items: center;
+    margin-bottom: 0.5rem;
 }
 form input {
     padding: 0.5rem;
-    border-radius: 25px;
+    border-radius: 5px;
     border: 2px solid tomato;
     outline: none;
+    accent-color: tomato;
 }
 
 form input[type="submit"],
+form input[type="reset"],
 form button {
     padding: 0.5rem;
     background-color: tomato;
@@ -232,6 +234,7 @@ form button {
 }
 
 form input[type="submit"]:hover,
+form input[type="reset"]:hover,
 form button:hover {
     background-color: color-mix(in oklab, tomato, black 10%);
     transform: scale(1.05);
@@ -244,17 +247,10 @@ form button:disabled {
     pointer-events: none;
 }
 
-form input:invalid {
-    border-color: red;
-}
-
-form input:valid {
-    border-color: green;
-}
+/* TODO: champs invalide et valide */
 
 section {
     width: 90vw;
-    height: 30vh;
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid tomato;
@@ -268,6 +264,6 @@ section nav {
     align-items: center;
     margin-top: auto;
 }
-/* AJOUTER DES CLASSES POUR CACHER et DÉSACTIVER */
 .invisible {
+    display: none;
 }

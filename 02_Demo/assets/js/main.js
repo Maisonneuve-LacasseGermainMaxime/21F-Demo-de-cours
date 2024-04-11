@@ -1,25 +1,29 @@
 // Variables
 let sectionActuelle = 0;
+let formulaireValide = false;
+const donnees = {};
 
 // Éléments HTML
-// - Formulaire
-// - Sections
-// - Boutons
+const formulaire = document.querySelector("#formulaire-principal");
+const sectionResume = document.querySelector(".resume");
 
 //Fonctions
-function init() {}
+function init() {
+  formulaire.addEventListener("submit", onSubmit);
+}
 
-function onSubmit() {}
+function onSubmit(evenement) {
+  evenement.preventDefault();
 
-//Désactiver le bouton précédent si on est sur la première section
-//Désactiver le bouton suivant si on est sur la dernière section
-function afficherSection() {}
+  if (formulaireValide) {
+    // formulaire.submit();
+    // formulaire.reset();
+  }
+}
 
-function toutCacher() {}
+function onChangementChamp(evenement) {}
 
-function avancerSection() {}
-
-function reculerSection() {}
+function afficherResume(nomChamp, valeur) {}
 
 // Exécution
 init();

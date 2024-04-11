@@ -1,64 +1,184 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cours 4</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="assets/css/styles.css" />
-        <script src="assets/js/main.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <nav id="nav-principale">
-                <img src="assets/img/logo_vinyle.png" alt="logo" class="logo" />
-                <ul class="nav__liste">
-                    <li><a href="#" style="color: tomato; text-decoration: underline">Accueil</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">À propos</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <form action="">
-                <section>
-                    <h2>Section 1</h2>
-                    <nav class="navigation-section">
-                        <button data-direction="-1">Précédent</button>
-                        <button data-direction="1">Suivant</button>
-                    </nav>
-                </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours 4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-principale">
+        <img src="assets/img/logo_vinyle.png" alt="logo" class="logo" />
+        <ul class="nav__liste">
+          <li>
+            <a href="#" style="color: tomato; text-decoration: underline"
+              >Accueil</a
+            >
+          </li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">À propos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="" method="post" id="formulaire-principal">
+        <section>
+          <h2>Section 1</h2>
+          <div class="groupe-champs">
+            <label for="text">text</label>
+            <input type="text" id="text" name="text" />
+          </div>
 
-                <section>
-                    <h2>Section 2</h2>
-                    <nav class="navigation-section">
-                        <button data-direction="-1">Précédent</button>
-                        <button data-direction="1">Suivant</button>
-                    </nav>
-                </section>
+          <div class="groupe-champs">
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" />
+          </div>
 
-                <section>
-                    <h2>Section 3</h2>
-                    <nav class="navigation-section">
-                        <button data-direction="-1">Précédent</button>
-                        <button data-direction="1">Suivant</button>
-                    </nav>
-                </section>
+          <div class="groupe-champs">
+            <label for="tel">tel</label>
+            <input type="tel" id="tel" name="tel" />
+          </div>
 
-                <section>
-                    <h2>Section 4</h2>
-                    <nav class="navigation-section">
-                        <button data-direction="-1">Précédent</button>
-                        <button data-direction="1">Suivant</button>
-                    </nav>
-                </section>
-            </form>
-        </main>
-    </body>
+          <div class="groupe-champs">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="number">number</label>
+            <input type="number" id="number" name="number" value="1" />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="date">date</label>
+            <input type="date" id="date" name="date" />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="range">range</label>
+            <input
+              type="range"
+              id="range"
+              name="range"
+              value="1"
+              min="0"
+              max="5"
+              step="1"
+            />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="radio">radio</label>
+            <input type="radio" id="radio1" name="radio" value="1" />
+            <input type="radio" id="radio2" name="radio" value="2" checked />
+            <input type="radio" id="radio3" name="radio" value="3" />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="checkbox">checkbox</label>
+            <input type="checkbox" id="checkbox" name="checkbox" checked />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="select">select</label>
+            <select name="select" id="select" value="3">
+              <option value="1">Choix 1</option>
+              <option value="2">Choix 2</option>
+              <option value="3">Choix 3</option>
+              <option value="4">Choix 4</option>
+            </select>
+          </div>
+
+          <div class="groupe-champs">
+            <label for="textarea">textarea</label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="groupe-champs">
+            <label for="color">color</label>
+            <input type="color" id="color" name="color" />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="url">url</label>
+            <input type="url" id="url" name="url" />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="file">file</label>
+            <input type="file" id="file" name="file" />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="hidden">hidden</label>
+            <input type="hidden" id="hidden" name="hidden" value="PATATE" />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="reset">reset</label>
+            <input
+              type="reset"
+              id="reset"
+              name="reset"
+              value="Réinitialiser le formulaire"
+            />
+          </div>
+
+          <div class="groupe-champs">
+            <label for="submit">submit</label>
+            <input
+              type="submit"
+              id="submit"
+              name="submit"
+              value="Soumettre le formulaire"
+            />
+          </div>
+        </section>
+
+        <section class="resume">
+          <h2>Résumé</h2>
+          <p>
+            Text:
+            <span data-name="text"></span>
+          </p>
+          <p>
+            Password:
+            <span data-name="password"></span>
+          </p>
+          <p>
+            Tel:
+            <span data-name="tel"></span>
+          </p>
+          <p>
+            Email:
+            <span data-name="email"></span>
+          </p>
+
+          <p>
+            Date:
+            <span data-name="date"></span>
+          </p>
+
+          <p>
+            Range:
+            <span data-name="range"></span>
+          </p>
+        </section>
+      </form>
+    </main>
+  </body>
 </html>
