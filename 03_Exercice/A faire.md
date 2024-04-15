@@ -1,9 +1,8 @@
-# Exercice - cours 11 - Avancement du TP
+# Exercice - cours 12 - Avancement du TP
 
 ## Consignes
 
-- Mettez en place les champs de votre formulaire pour le TP et ajoutez les attributs de contrôles (required, min, max, minlength, maxlength)
-- Modifiez le CSS pour afficher les champs invalides, valides et désactivés.
-- Ajustez la couleur de vos champs de formulaire
-- Bloquez l'envoi du formulaire
-- Au changement de valeur de champs, modifiez la section résumé
+- Ajoutez la validation de votre formulaire à l'aide de reportValidity, checkValidity ou validity.valid
+- Modifiez le CSS afin de donner de la rétroaction à l'utilisateur
+- Si le champ n'est pas valide, affichez un message d'erreur.
+- Trouvez le bouton de la navigation pour avancer de la section en cours et activez/desactivez-le si la section est valide (ou non)

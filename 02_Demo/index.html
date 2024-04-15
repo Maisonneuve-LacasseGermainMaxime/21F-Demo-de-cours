@@ -31,186 +31,59 @@
     </header>
     <main>
       <form action="" method="get" id="formulaire-principal">
-        <section>
+        <section data-page="1">
           <h2>Section 1</h2>
+
           <div class="groupe-champs">
-            <label for="patate">text</label>
-            <input
-              type="text"
-              id="patate"
-              name="text"
-              placeholder="Veuillez indiquer votre nom"
-              minlength="5"
-              maxlength="15"
-            />
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" maxlength="50" required />
+            <p class="error-message">Vous devez saisir votre nom</p>
           </div>
 
           <div class="groupe-champs">
-            <label for="password">password (obligatoire)</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              maxlength="32"
-              required
-            />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="tel">tel</label>
-            <input type="tel" id="tel" name="tel" pattern="\d{1,5}" required />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="email">email</label>
-            <input type="email" id="email" name="email" />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="number">number</label>
-            <input
-              type="number"
-              id="number"
-              name="number"
-              value="1"
-              min="0"
-              max="10"
-              step="0.5"
-            />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="date">date</label>
-            <input type="date" id="date" name="date" />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="range">range</label>
-            <input
-              type="range"
-              id="range"
-              name="range"
-              value="1"
-              min="0"
-              max="5"
-              step="1"
-            />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="radio1">radio1</label>
-            <input type="radio" id="radio1" name="radio" value="1" />
-            <label for="radio2">radio2</label>
-            <input type="radio" id="radio2" name="radio" value="2" checked />
-            <label for="radio3">radio3</label>
-            <input type="radio" id="radio3" name="radio" value="3" />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="checkbox">checkbox</label>
-            <input type="checkbox" id="checkbox" name="checkbox" checked />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="select">select</label>
-            <select name="select" id="select">
-              <option value="1">Choix 1</option>
-              <option value="2">Choix 2</option>
-              <option value="3">Choix 3</option>
-              <option value="4">Choix 4</option>
-            </select>
-          </div>
-
-          <div class="groupe-champs">
-            <label for="textarea">textarea</label>
-            <textarea
-              name="textarea"
-              id="textarea"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-
-          <div class="groupe-champs">
-            <label for="color">color</label>
-            <input type="color" id="color" name="color" />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="url">url</label>
-            <input type="url" id="url" name="url" />
-            <p>✔</p>
-          </div>
-
-          <div class="groupe-champs">
-            <label for="file">file</label>
-            <input type="file" id="file" name="file" />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="hidden">hidden</label>
-            <input type="hidden" id="hidden" name="hidden" value="PATATE" />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="reset">reset</label>
-            <input
-              type="reset"
-              id="reset"
-              name="reset"
-              value="Réinitialiser le formulaire"
-            />
-          </div>
-
-          <div class="groupe-champs">
-            <label for="submit">submit</label>
-            <input
-              type="submit"
-              id="submit"
-              name="submit"
-              value="Soumettre le formulaire"
-              disabled
-            />
+            <label for="courriel">Courriel</label>
+            <input type="email" id="courriel" name="courriel" maxlength="50" />
+            <p class="error-message">Vous devez saisir un courriel valide</p>
           </div>
         </section>
-
-        <section class="resume">
-          <h2>Résumé</h2>
-          <p>
-            Text:
-            <span data-name="text"></span>
-          </p>
-          <p>
-            Password:
-            <span data-name="password"></span>
-          </p>
-          <p>
-            Tel:
-            <span data-name="tel"></span>
-          </p>
-          <p>
-            Email:
-            <span data-name="email"></span>
-          </p>
-
-          <p>
-            Date:
-            <span data-name="date"></span>
-          </p>
-
-          <p>
-            Range:
-            <span data-name="range"></span>
-          </p>
-
-          <p>
-            Color:
-            <span data-name="color"></span>
-          </p>
-          <p>
-            Checkbox:
-            <span data-name="checkbox"></span>
-          </p>
+        <section data-page="2">
+          <h2>Section 2</h2>
+          <div class="groupe-champs">
+            <label for="couleur-pref">Couleur préférée</label>
+            <input
+              type="color"
+              id="couleur-pref"
+              name="couleur-pref"
+              required
+            />
+            <p class="error-message">
+              Vous devez saisir une couleur, de préférence Tomato :)
+            </p>
+          </div>
+          <div class="groupe-champs">
+            <label for="chance">Nombre chanceux (entre 0 et 100)</label>
+            <input
+              type="number"
+              id="chance"
+              name="chance"
+              min="0"
+              max="100"
+              step="1"
+            />
+            <p class="error-message">Vous devez saisir un nombre valide</p>
+          </div>
+          <div class="groupe-champs">
+            <label for="peut-choisir-date">Peut choisir une date</label>
+            <input
+              type="checkbox"
+              id="peut-choisir-date"
+              name="peut-choisir-date"
+            />
+          </div>
+          <div class="groupe-champs">
+            <label for="date">Date</label>
+            <input type="date" />
+          </div>
         </section>
       </form>
     </main>
