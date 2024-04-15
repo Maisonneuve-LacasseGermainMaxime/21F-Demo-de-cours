@@ -248,7 +248,25 @@ form button:disabled {
 }
 
 /* TODO: champs invalide et valide */
+form :required{
+    border: 2px solid cornflowerblue;
+}
 
+form :invalid{
+    border: 4px solid red;
+}
+form :invalid+p{
+   /* display: none; */
+   visibility: hidden;
+}
+
+form :valid{
+    border: 2px solid lime;
+}
+form :valid+p{
+    /* display: initial; */
+    visibility: visible;
+ }
 section {
     width: 90vw;
     margin: 0 auto;

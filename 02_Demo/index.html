@@ -30,22 +30,35 @@
       </nav>
     </header>
     <main>
-      <form action="" method="post" id="formulaire-principal">
+      <form action="" method="get" id="formulaire-principal">
         <section>
           <h2>Section 1</h2>
           <div class="groupe-champs">
-            <label for="text">text</label>
-            <input type="text" id="text" name="text" />
+            <label for="patate">text</label>
+            <input
+              type="text"
+              id="patate"
+              name="text"
+              placeholder="Veuillez indiquer votre nom"
+              minlength="5"
+              maxlength="15"
+            />
           </div>
 
           <div class="groupe-champs">
-            <label for="password">password</label>
-            <input type="password" id="password" name="password" />
+            <label for="password">password (obligatoire)</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              maxlength="32"
+              required
+            />
           </div>
 
           <div class="groupe-champs">
             <label for="tel">tel</label>
-            <input type="tel" id="tel" name="tel" />
+            <input type="tel" id="tel" name="tel" pattern="\d{1,5}" required />
           </div>
 
           <div class="groupe-champs">
@@ -55,7 +68,15 @@
 
           <div class="groupe-champs">
             <label for="number">number</label>
-            <input type="number" id="number" name="number" value="1" />
+            <input
+              type="number"
+              id="number"
+              name="number"
+              value="1"
+              min="0"
+              max="10"
+              step="0.5"
+            />
           </div>
 
           <div class="groupe-champs">
@@ -77,9 +98,11 @@
           </div>
 
           <div class="groupe-champs">
-            <label for="radio">radio</label>
+            <label for="radio1">radio1</label>
             <input type="radio" id="radio1" name="radio" value="1" />
+            <label for="radio2">radio2</label>
             <input type="radio" id="radio2" name="radio" value="2" checked />
+            <label for="radio3">radio3</label>
             <input type="radio" id="radio3" name="radio" value="3" />
           </div>
 
@@ -90,7 +113,7 @@
 
           <div class="groupe-champs">
             <label for="select">select</label>
-            <select name="select" id="select" value="3">
+            <select name="select" id="select">
               <option value="1">Choix 1</option>
               <option value="2">Choix 2</option>
               <option value="3">Choix 3</option>
@@ -116,6 +139,7 @@
           <div class="groupe-champs">
             <label for="url">url</label>
             <input type="url" id="url" name="url" />
+            <p>✔</p>
           </div>
 
           <div class="groupe-champs">
@@ -145,6 +169,7 @@
               id="submit"
               name="submit"
               value="Soumettre le formulaire"
+              disabled
             />
           </div>
         </section>
@@ -176,6 +201,15 @@
           <p>
             Range:
             <span data-name="range"></span>
+          </p>
+
+          <p>
+            Color:
+            <span data-name="color"></span>
+          </p>
+          <p>
+            Checkbox:
+            <span data-name="checkbox"></span>
           </p>
         </section>
       </form>
