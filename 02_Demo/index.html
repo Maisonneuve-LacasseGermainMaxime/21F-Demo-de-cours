@@ -36,7 +36,7 @@
 
           <div class="groupe-champs">
             <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" maxlength="50" required />
+            <input type="text" id="nom" name="nom" maxlength="50"  pattern="(\w\d\w)\s?(\d\w\d)"required />
             <p class="error-message">Vous devez saisir votre nom</p>
           </div>
 
@@ -82,7 +82,7 @@
           </div>
           <div class="groupe-champs">
             <label for="date">Date</label>
-            <input type="date" />
+            <input type="date" name="date" disabled/>
           </div>
         </section>
       </form>
