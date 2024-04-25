@@ -2,253 +2,261 @@
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html,
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-  font-family: "Teko", sans-serif;
-  color: tomato;
+    font-family: "Teko", sans-serif;
+    color: tomato;
+    background-color: white;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: bold;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 h3 {
-  font-size: 1.25rem;
-  font-weight: bold;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 p {
-  font-size: 1rem;
-  line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 a {
-  font-size: 1rem;
-  text-decoration: none;
-  color: black;
-  transition: all 350ms;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    transition: all 350ms;
 }
 a:hover {
-  color: rgb(188, 93, 93);
-  text-decoration: underline;
+    color: rgb(188, 93, 93);
+    text-decoration: underline;
 }
 a.actif {
-  color: rgb(188, 93, 93);
-  text-decoration: underline;
-  font-weight: bold;
+    color: rgb(188, 93, 93);
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* ENTETE */
 header {
-  padding: 2rem;
-  background-color: rgba(232, 232, 232, 0.8);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    background-color: rgba(232, 232, 232, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 nav {
-  display: flex;
-  gap: 3rem;
+    display: flex;
+    gap: 3rem;
 }
 
 nav .logo {
-  max-width: 100px;
-  max-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 nav .nav__liste {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 nav li a {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 main {
-  flex: 1;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
 }
 
 /* ======== */
 .bouton {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  font-size: 1rem;
-  background-color: tomato;
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 350ms;
-  box-shadow: none;
-  outline: none;
-  border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: tomato;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 350ms;
+    box-shadow: none;
+    outline: none;
+    border: none;
 }
 
 .bouton:hover {
-  background-color: color-mix(in oklab, tomato, black 10%);
-  transform: scale(1.05);
-  text-decoration: underline;
+    background-color: color-mix(in oklab, tomato, black 10%);
+    transform: scale(1.05);
+    text-decoration: underline;
 }
 
 .liste-albums {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: flex-start;
-  margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-top: 2rem;
 }
 .album {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: tomato;
-  min-height: 50px;
-  flex-basis: calc((100% / 3 - 1rem) + (1rem / 3));
-  color: white;
-  transition: all 250ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: tomato;
+    min-height: 50px;
+    flex-basis: calc((100% / 3 - 1rem) + (1rem / 3));
+    color: white;
+    transition: all 250ms ease-in-out;
 }
 
 .album:hover {
-  background-color: #f0f0f0;
-  color: tomato;
-  transform: scale(1.05);
-  border-radius: 15px;
+    background-color: #f0f0f0;
+    color: tomato;
+    transform: scale(1.05);
+    border-radius: 15px;
 }
 
 .album img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .section-header .filtres {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .section-header .filtres .filtre {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  font-size: 1rem;
-  background-color: tomato;
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 350ms;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: tomato;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 350ms;
 }
 
 .section-header .filtres .filtre:hover {
-  background-color: color-mix(in oklab, tomato, black 10%);
-  transform: scale(1.05);
-  text-decoration: underline;
+    background-color: color-mix(in oklab, tomato, black 10%);
+    transform: scale(1.05);
+    text-decoration: underline;
 }
 
 .panier-achat {
-  min-width: 100%;
-  border: 2px solid tomato;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+    min-width: 100%;
+    border: 2px solid tomato;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
 .panier-achat .panier-achat__element {
-  display: flex;
-  border: 2px solid teal;
-  padding: 2.5rem;
-  gap: 10px;
-  align-items: flex-start;
-  position: relative;
+    display: flex;
+    border: 2px solid teal;
+    padding: 2.5rem;
+    gap: 10px;
+    align-items: flex-start;
+    position: relative;
 }
 
 .panier-achat .panier-achat__element .bouton {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  padding: 5px 7px;
-  border-radius: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px 7px;
+    border-radius: 25px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 form .groupe-champs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-  margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 form input {
-  border-radius: 5px;
-  border: 2px solid tomato;
-  outline: none;
-  accent-color: tomato;
+    border-radius: 5px;
+    border: 2px solid tomato;
+    outline: none;
+    accent-color: tomato;
 }
 
 form input[type="submit"],
 form input[type="reset"],
 form button {
-  padding: 0.5rem;
-  background-color: tomato;
-  color: white;
-  cursor: pointer;
-  transition: all 350ms;
-  width: fit-content;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
+    padding: 0.5rem;
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+    transition: all 350ms;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
 }
 
 form input[type="submit"]:hover,
 form input[type="reset"]:hover,
 form button:hover {
-  background-color: color-mix(in oklab, tomato, black 10%);
-  transform: scale(1.05);
-  text-decoration: underline;
+    background-color: color-mix(in oklab, tomato, black 10%);
+    transform: scale(1.05);
+    text-decoration: underline;
 }
 
 form input[type="submit"]:disabled,
 form button:disabled {
-  background-color: grey;
-  pointer-events: none;
+    background-color: grey;
+    pointer-events: none;
 }
 
 /* TODO: champs invalide et valide */
 form :required {
-  border: 2px solid cornflowerblue;
+    border: 2px solid cornflowerblue;
 }
 
 /* form :invalid {
@@ -268,35 +276,59 @@ form :valid + p {
 /* TODO: ici*/
 
 form [name] + p.error-message {
-  display: none;
+    display: none;
 }
 
 form .invalid + p.error-message {
-  display: initial;
+    display: initial;
 }
 
 form .invalid {
-  border: 4px solid red;
+    border: 4px solid red;
 }
 
 section {
-  width: 90vw;
-  margin: 0 auto;
-  padding: 1rem;
-  border: 1px solid tomato;
-  display: flex;
-  flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid tomato;
+    display: flex;
+    flex-direction: column;
 }
 section[data-page].invalid {
-  border: 5px dotted firebrick;
+    border: 5px dotted firebrick;
 }
 
 section nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
 }
+
+.recherche-villes {
+    position: relative;
+}
+
+.recherche-villes input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.liste-villes {
+    position: absolute;
+    top: 100%;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.liste-villes ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*Garder à la fin*/
 .invisible {
-  display: none;
+    display: none;
 }
