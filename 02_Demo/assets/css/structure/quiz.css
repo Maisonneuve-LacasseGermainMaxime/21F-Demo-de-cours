@@ -1,0 +1,38 @@
+.quiz-conteneur {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: color-mix(in oklab, tomato 30%, white 70%);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    margin-block: 2rem;
+}
+
+.quiz-conteneur .question {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.quiz-conteneur .question .question__options {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.quiz-conteneur .question .question__options li {
+    flex-basis: 20%;
+    font-size: 1.5rem;
+}

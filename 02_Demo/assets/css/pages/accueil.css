@@ -1,0 +1,15 @@
+#accueil main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+}
+
+#accueil main > aside {
+    flex-basis: 40%;
+    padding: 3rem;
+}
+
+#accueil main > section {
+    flex-basis: 60%;
+    padding: 3rem;
+}

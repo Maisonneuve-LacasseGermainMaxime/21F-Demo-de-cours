@@ -1,0 +1,21 @@
+.recherche-villes {
+    position: relative;
+}
+
+.recherche-villes input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.liste-villes {
+    position: absolute;
+    top: 100%;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.liste-villes ul {
+    list-style: none;
+    padding: 0;
+}

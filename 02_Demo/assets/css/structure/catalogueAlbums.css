@@ -1,0 +1,39 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.detail .detail__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.detail .detail__groupe {
+    color: tomato;
+}
+
+.grille-produits {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.grille-produits .produit {
+    flex-basis: calc(30% - 2rem);
+    cursor: pointer;
+    transition: all 350ms;
+}
+
+.grille-produits .produit:hover {
+    transform: scale(1.05);
+    filter: brightness(1.4);
+}
+
+.grille-produits .produit .produit__img {
+    max-width: 100%;
+    height: auto;
+}

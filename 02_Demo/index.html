@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cours 12</title>
+        <title>Accueil - Vinyles</title>
+        <link rel="icon" type="image/png" href="assets/img/logo_vinyle.png" />
+
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,36 +14,49 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="assets/css/styles.css" />
-        <script src="assets/js/main.js" defer></script>
+        <script src="assets/js/navigation.js" defer></script>
+        <script src="assets/js/pages/accueil.js" defer></script>
     </head>
-    <body>
+    <body id="accueil">
+        <template id="modale">
+            <div class="modale__conteneur">
+                <div class="modale__boite-message">
+                    <div class="modale__titre">{{titre}}</div>
+                    <div class="modale__message">{{message}}</div>
+                    <button class="modale__btn-fermer">Fermer</button>
+                </div>
+            </div>
+        </template>
         <header>
             <nav id="nav-principale">
                 <img src="assets/img/logo_vinyle.png" alt="logo" class="logo" />
-                <ul class="nav__liste">
-                    <li>
-                        <a href="#" style="color: tomato; text-decoration: underline">Accueil</a>
-                    </li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">À propos</a></li>
-                </ul>
+                <ul class="nav__liste"></ul>
             </nav>
         </header>
         <main>
-            <form action="" method="get" id="formulaire-principal">
-                <div class="groupe-champs recherche-villes">
-                    <input type="search" name="input-villes" />
-                    <ul class="liste-villes">
-                        <li>Paris</li>
-                        <li>Lyon</li>
-                        <li>Marseille</li>
-                        <li>Nantes</li>
-                        <li>Lille</li>
-                    </ul>
+            <aside>
+                <div class="detail">
+                    <img class="detail__img" src="assets/img/albums/the_doors.webp" alt="" />
+                    <h2 class="detail__artiste">The Doors</h2>
+                    <h3 class="detail__album">The Doors</h3>
+                    <p class="detail__prix">20$</p>
+                    <p class="detail__genre">Rock</p>
+                    <p class="detail__annee">1967</p>
+                    <p class="detail__enStock"></p>
                 </div>
-            </form>
-            <button class="fullscreen-btn">Plein écran</button>
-            <p class="fullscreen-message invisible">Pour quitter le mode plein écran, appuyez sur la touche q</p>
+            </aside>
+            <section>
+                <div class="section-header">
+                    <h1>Derniers arrivages</h1>
+                    <div class="filtres">
+                        <div class="bouton tri" id="tri-artiste" data-type="artiste">Par ordre alphabétique (A-Z)</div>
+                        <div class="bouton tri" id="tri-annee" data-type="annee">Par année (plus récent)</div>
+                        <div class="bouton tri" id="tri-prix" data-type="prix">Par prix</div>
+                        <div class="bouton filtre" id="filtre-rabais-20" data-type="rabais">20$ et moins</div>
+                    </div>
+                </div>
+                <div class="grille-produits"></div>
+            </section>
         </main>
     </body>
 </html>

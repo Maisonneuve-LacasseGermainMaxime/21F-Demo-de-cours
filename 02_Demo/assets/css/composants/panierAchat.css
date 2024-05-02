@@ -1,0 +1,24 @@
+.panier-achat {
+    min-width: 100%;
+    border: 2px solid tomato;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.panier-achat .panier-achat__element {
+    display: flex;
+    border: 2px solid teal;
+    padding: 2.5rem;
+    gap: 10px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.panier-achat .panier-achat__element .bouton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 5px 7px;
+    border-radius: 25px;
+}

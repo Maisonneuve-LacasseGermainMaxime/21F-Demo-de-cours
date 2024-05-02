@@ -1,0 +1,23 @@
+/* ======== */
+.bouton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: tomato;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 350ms;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.bouton:hover {
+    background-color: color-mix(in oklab, tomato, black 10%);
+    transform: scale(1.05);
+    text-decoration: underline;
+}
