@@ -1,4 +1,5 @@
 import conteneurNav, { init as navigationInit } from "../modules/navigation.js";
+import Modale from "../classes/Modale.js";
 import albums from "../donnees/albums.js";
 
 let panierAchat = [];
@@ -21,6 +22,10 @@ const detailGenre = detailHTML.querySelector(".detail__genre");
  * Fonction pour initialiser la page
  */
 function init() {
+  const modale1 = new Modale("Boite 1", "Message 1");
+  // const modale2 = new Modale("Boite 2", "Message 2");
+  console.log(modale1);
+
   // On récupère le panier d'achat dans le local storage
   const panierString = localStorage.getItem("panierAchat");
   // Si le panier est déjà dans le local storage, on le récupère

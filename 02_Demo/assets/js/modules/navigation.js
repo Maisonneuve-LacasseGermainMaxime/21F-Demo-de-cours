@@ -43,7 +43,7 @@ function verifierSiPageActive(urlAVerifier) {
  * @param {Object} objetLien
  * @returns {void}
  */
-function creerElementLien(objetLien) {
+export function creerElementLien(objetLien) {
   // On crée un élément de lien
   const lien = `<li><a href="${objetLien.lien}">${objetLien.titre}</a></li>`;
   conteneurNav.insertAdjacentHTML("beforeend", lien);

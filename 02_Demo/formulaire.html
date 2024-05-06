@@ -16,13 +16,126 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script type="module" src="assets/js/pages/formulaire.js"></script>
   </head>
-  <body id="formulaire">
+  <body>
     <header>
-      <nav id="nav-principale">
-        <img src="assets/img/logo_vinyle.png" alt="logo" class="logo" />
-        <ul class="nav__liste"></ul>
-      </nav>
+        <nav id="nav-principale">
+            <img src="assets/img/logo_vinyle.png" alt="logo" class="logo" />
+            <ul class="nav__liste"></ul>
+        </nav>
     </header>
-    <main></main>
-  </body>
+    <main>
+        <h1>Formulaire de livraison</h1>
+        <form action="" id="formulaire-livraison">
+            <section data-page="0">
+                <h2>Informations personnelles</h2>
+                <div class="groupe-champs">
+                    <label for="nom">Nom Complet *obligatoire</label>
+                    <input type="text" id="nom" name="nom" maxlength="100" required />
+                    <small class="erreur">Vous devez entrer votre nom complet</small>
+                </div>
+                <div class="groupe-champs">
+                    <label for="courriel">Courriel *obligatoire</label>
+                    <input type="email" id="courriel" name="courriel" maxlength="100" required />
+                    <small class="erreur">Vous devez entrer votre courriel</small>
+                </div>
+                <div class="groupe-champs">
+                    <label for="tel">Numéro de téléphone *obligatoire</label>
+                    <input
+                        type="tel"
+                        id="tel"
+                        name="tel"
+                        pattern="^([1]?)\(?([0-9]{3})\)?[\s\-\.]([0-9]{3})[\s\-\.]([0-9]{4})$"
+                        required
+                    />
+                    <small class="erreur">Vous devez entrer un numéro valide</small>
+                </div>
+                <div class="groupe-champs">
+                    <label for="adresse">Adresse *obligatoire</label>
+                    <input type="text" id="adresse" name="adresse" maxlength="100" required />
+                    <small class="erreur">Vous devez entrer votre adresse</small>
+                </div>
+                <div class="groupe-champs">
+                    <label for="ville">Ville *obligatoire</label>
+                    <input type="text" id="ville" name="ville" maxlength="100" required />
+                    <small class="erreur">Vous devez entrer une ville valide</small>
+                </div>
+                <div class="groupe-champs">
+                    <label for="code-postal">Code postal *obligatoire</label>
+                    <input
+                        type="text"
+                        id="code-postal"
+                        name="code-postal"
+                        pattern="^([A-z][0-9][A-z])\s*([0-9][A-z][0-9])$"
+                        required
+                    />
+                    <small class="erreur">Vous devez entrer un code postal valide</small>
+                </div>
+                <nav class="navigation-section">
+                    <div class="bouton" data-direction="1">Suivant</div>
+                </nav>
+            </section>
+
+            <section data-page="1">
+                <h2>Informations sur la livraison</h2>
+                <div class="groupe-champs">
+                    <label for="date">Date de livraison</label>
+                    <input type="date" id="date" name="date" required />
+                    <small class="erreur">Sélectionnez une date</small>
+                </div>
+                <div class="groupe-champs">
+                    <label for="en-magasin">Livraison en magasion</label>
+                    <input type="checkbox" id="en-magasin" name="en-magasin" />
+                </div>
+                <div class="groupe-champs">
+                    <label for="succursale">Succursale</label>
+                    <select id="succursale" name="succursale">
+                        <option value="">Choisir une succursale</option>
+                        <option value="montreal">Montréal</option>
+                        <option value="rouyn-noranda">Rouyn-Noranda</option>
+                        <option value="Québec">Québec</option>
+                    </select>
+                    <small class="erreur">Sélectionnez une succursale</small>
+                </div>
+                <div class="groupe-champs">
+                    <p>Service</p>
+                    <label for="service-poste">Poste Canada</label>
+                    <input type="radio" id="service-poste" name="service" value="service-poste" checked />
+                    <label for="service-fedex">FedEx</label>
+                    <input type="radio" id="service-fedex" name="service" value="service-fedex" />
+                    <label for="service-ups">UPS</label>
+                    <input type="radio" id="service-ups" name="service" value="service-ups" />
+                    <small class="erreur">Sélectionnez un service</small>
+                </div>
+                <nav class="navigation-section">
+                    <div class="bouton" data-direction="-1">Précédent</div>
+                    <div class="bouton" data-direction="1">Suivant</div>
+                </nav>
+            </section>
+
+            <section data-page="2" data-resume>
+                <h2>Résumé de la commande</h2>
+                <div>
+                    <h1>Informations sur le client</h1>
+                    <p>Nom: <span data-name="nom"></span></p>
+                    <p>Courriel: <span data-name="courriel"></span></p>
+                    <p>Numéro de téléphone: <span data-name="tel"></span></p>
+                    <p>Adresse: <span data-name="adresse"></span></p>
+                    <p>Ville: <span data-name="ville"></span></p>
+                    <p>Code postal: <span data-name="code-postal"></span></p>
+                </div>
+                <div>
+                    <h1>Informations sur la commande</h1>
+                    <p>Date idéale de livraison: <span data-name="date"></span></p>
+                    <p>Livraison en magasion: <span data-name="en-magasin"></span></p>
+                    <p>Succursale: <span data-name="succursale"></span></p>
+                    <p>Service de livraison: <span data-name="service"></span></p>
+                </div>
+                <nav class="navigation-section">
+                    <div class="bouton" data-direction="-1">Précédent</div>
+                    <input type="submit" value="Envoyer le formulaire" />
+                </nav>
+            </section>
+        </form>
+    </main>
+</body>
 </html>
