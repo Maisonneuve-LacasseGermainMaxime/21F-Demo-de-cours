@@ -12,23 +12,22 @@ Dans le même fichier, créez un tableau d'objets comprenant les messages de fé
 
 ```javascript
 const quiz = [
-    {
-        question: "Quelle est la capitale de la France?",
-        options: ["Paris", "Londres", "Berlin", "Madrid"],
-        reponse: "Paris",
-    },
-    //... Ajoutez un total de 5 questions
+  {
+    question: "Quelle est la capitale de la France?",
+    options: ["Paris", "Londres", "Berlin", "Madrid"],
+    reponse: "Paris",
+  },
+  //... Ajoutez un total de 5 questions
 ];
 
 const messages = [
-    { resultat: 0, message: "Désolé! Vous n'avez rien compris" },
-    //... Ajoutez un message pour chaque résultat possible
-    { resultat: 5, message: "Félicitations! Vous avez tout juste!" },
+  { resultat: 0, message: "Désolé! Vous n'avez rien compris" },
+  //... Ajoutez un message pour chaque résultat possible
+  { resultat: 5, message: "Félicitations! Vous avez tout juste!" },
 ];
 ```
 
-Dans le fichier principal, importez les deux tableaux et créez une fonction `démarrerQuiz` qui affichera les questions et les réponses possibles.
-Utilisez un template dans le html pour chaque question et ses réponses.
+Dans le fichier principal, importez les deux tableaux et créez une fonction `demarrerQuiz` qui affichera les questions et les réponses possibles dans la console.
 
 ### Partie 2
 
