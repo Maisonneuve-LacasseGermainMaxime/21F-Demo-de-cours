@@ -43,6 +43,7 @@ class Question {
     }
 
     verifierReponse(evenement) {
+        // Retirer l'écouteur d'événement des boutons
         // Vérifier si la réponse est la bonne
         // Si oui, afficherBonneReponse()
         // Sinon, afficherErreur()
@@ -51,13 +52,11 @@ class Question {
     afficherErreur() {
         // Mettre en évidence la mauvaise réponse
         // Mettre en évidence la bonne réponse
-        // Bloquer les boutons avec le CSS
         // Attendre un délai et passer à la prochaine question (par le parent Quiz)
     }
 
     afficherBonneReponse() {
         // Mettre en évidence la bonne réponse
-        // Bloquer les boutons avec le CSS
         // Mettre à jour le pointage
         // Attendre un délai et passer à la prochaine question
     }
