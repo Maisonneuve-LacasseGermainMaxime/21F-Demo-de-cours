@@ -21,6 +21,11 @@
   transform: scale(1.05);
   text-decoration: underline;
 }
+.bouton.bonne-reponse {
+  background-color: limegreen;
+  pointer-events: none;
+}
+
 .bouton.inactif {
   background-color: gray;
   pointer-events: none;

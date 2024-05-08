@@ -3,8 +3,7 @@ import Quiz from "../classes/Quiz.js";
 
 function init() {
   navigationInit();
-
-  // let quiz = new Quiz();
+  let quiz = new Quiz();
 }
 
 init();
