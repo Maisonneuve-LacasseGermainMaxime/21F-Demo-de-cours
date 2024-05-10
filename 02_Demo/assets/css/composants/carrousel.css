@@ -1,0 +1,43 @@
+.carrousel {
+    display: flex;
+    position: relative;
+    width: 20vw;
+    aspect-ratio: 1;
+    background-color: color-mix(in oklab, tomato 30%, transparent 70%);
+
+    & .bouton {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        font-size: 3rem;
+        z-index: 5;
+        opacity: 0.8;
+
+        &:hover {
+            transform: none;
+        }
+
+        &[data-direction="-1"] {
+            left: 0;
+            min-width: 10%;
+            height: 100%;
+        }
+
+        &[data-direction="1"] {
+            right: 0;
+            min-width: 10%;
+            height: 100%;
+        }
+    }
+
+    & .carrousel__conteneur_diapo {
+        & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0;
+        }
+    }
+}
