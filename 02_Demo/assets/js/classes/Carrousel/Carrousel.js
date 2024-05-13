@@ -25,7 +25,7 @@ class Carrousel {
         this.demarrer();
 
         //Affiche la première diapo
-        this.showSlide(this.indexDiapo);
+        this.afficherDiapo(this.indexDiapo);
     }
 
     /**
@@ -88,7 +88,7 @@ class Carrousel {
         if (this.indexDiapo >= this.listeAlbums.length) {
             this.indexDiapo = 0;
         }
-        this.showSlide(this.indexDiapo);
+        this.afficherDiapo(this.indexDiapo);
     }
 
     /**
@@ -99,14 +99,14 @@ class Carrousel {
         if (this.indexDiapo < 0) {
             this.indexDiapo = this.listeAlbums.length - 1;
         }
-        this.showSlide(this.indexDiapo);
+        this.afficherDiapo(this.indexDiapo);
     }
 
     /**
      * Affiche la diapositive à l'index spécifié.
      * @param {number} index - L'index de la diapositive à afficher.
      */
-    showSlide(index) {
+    afficherDiapo(index) {
         this.album = this.listeAlbums[index];
         const src = this.formatterAlbumSrc(this.album);
         const alt = this.formatterAlbumAlt(this.album);
