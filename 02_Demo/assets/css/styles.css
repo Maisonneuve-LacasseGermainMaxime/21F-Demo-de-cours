@@ -32,7 +32,34 @@
 */
 @import url("./pages/accueil.css");
 
+@keyframes titreAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes fadeInTitre {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animTitreFadeIn {
+  animation: fadeInTitre 5000ms forwards;
+}
+
 /*Garder à la fin*/
 .invisible {
-    display: none;
+  display: none;
+  transform: scale(1);
+  transition: all 350ms;
+}
+h1.titre-anim {
+  animation: titreAnim 3000ms infinite alternate ease-in-out;
 }

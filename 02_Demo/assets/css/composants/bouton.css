@@ -1,5 +1,15 @@
+@keyframes boutonHover {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
 /* ======== */
 .bouton {
+  top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -10,16 +20,24 @@
   color: white;
   border-radius: 25px;
   cursor: pointer;
-  transition: all 350ms;
+  /* transition: all 350ms; */
   box-shadow: none;
   outline: none;
-  border: none;
+  border: 4px dashed transparent;
 }
 
 .bouton:hover {
-  background-color: color-mix(in oklab, tomato, black 10%);
-  transform: scale(1.05);
+  /* animation: boutonHover 500ms alternate infinite ease-in-out; */
+  /* background-color: yellowgreen; */
+  /* transform: scale(1.05); */
   text-decoration: underline;
+  border: 4px dashed darksalmon;
+}
+.bouton.animation {
+  animation: boutonHover 500ms alternate infinite ease-in-out;
+}
+.bouton:focus {
+  background-color: yellowgreen;
 }
 .bouton.inactif {
   background-color: gray;
