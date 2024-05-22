@@ -2,12 +2,6 @@ import { questions } from "../donnees/questionsQuiz.js";
 import Pointage from "./Pointage.js";
 import Question from "./Question.js";
 
-// let reponsesQuiz = [];
-// let indexQuestionCourante = 0;
-// const template = document.querySelector("template#question");
-// const quizConteneur = document.querySelector(".quiz-conteneur");
-// const quizMessageConteneur = document.querySelector(".quiz-message-conteneur");
-
 class Quiz {
   constructor() {
     this.nbMaxQuestions = 5;
@@ -58,6 +52,7 @@ class Quiz {
     // Afficher le panneau de début
     // this.cacherPanneaux();
     // this.afficherPanneau(this.panneauDebutHTML);
+    this.prochaineQuestion();
   }
 
   prochaineQuestion() {

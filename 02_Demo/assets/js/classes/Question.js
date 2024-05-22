@@ -1,20 +1,3 @@
-// function afficherQuestion(question) {
-//   let clone = template.content.cloneNode(true);
-//   quizConteneur.appendChild(clone);
-
-//   const questionHTML = quizConteneur.lastElementChild;
-//   const titre = questionHTML.querySelector(".question__titre");
-//   const options = questionHTML.querySelector(".question__options");
-
-//   titre.textContent = question.question;
-
-//   let boutonsReponses = "";
-//   question.reponses.forEach(function (reponse) {
-//     boutonsReponses += `<li class="bouton">${reponse}</li>`;
-//   });
-//   options.innerHTML = boutonsReponses;
-// }
-
 class Question {
   constructor(
     titre,
@@ -25,7 +8,6 @@ class Question {
     quizParent
   ) {
     //Ajouter le quiz parent ici
-    // this.id;
     this.titre = titre;
     this.bonneReponse = bonneReponse;
     this.choixReponses = choixReponses;
@@ -39,9 +21,29 @@ class Question {
       "click",
       this.verifierReponse.bind(contexte)
     );
+
+    this.injecterHTML();
   }
 
   injecterHTML() {
+    let clone = this.gabaritHTML.content.cloneNode(true);
+    this.conteneurHTML.appendChild(clone);
+
+    const questionHTML = this.conteneurHTML.lastElementChild;
+    const titre = questionHTML.querySelector(".question__titre");
+    const options = questionHTML.querySelector(".question__options");
+
+    titre.textContent = this.titre;
+
+    options.innerHTML = "";
+
+    this.choixReponses.forEach(
+      function (reponse) {
+        let boutonReponse = `<li class="bouton">${reponse}</li>`;
+        options.insertAdjacentHTML("beforeend", boutonReponse);
+      }.bind(this)
+    );
+
     // Vider la section conteneurHTML
     // Cloner le gabaritHTML
     // Remplir le gabarit avec les informations de la question
@@ -56,7 +58,9 @@ class Question {
   }
 
   verifierReponse(evenement) {
-    console.log(this);
+    let bouton = evenement.target;
+    let reponse = bouton.textContent;
+
     // Retirer l'écouteur d'événement des boutons
     // Vérifier si la réponse est la bonne
     // Si oui, afficherBonneReponse()
