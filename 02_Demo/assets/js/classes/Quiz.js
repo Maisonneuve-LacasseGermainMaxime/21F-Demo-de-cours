@@ -50,23 +50,30 @@ class Quiz {
   // GESTION DES QUESTIONS ET DU QUIZ
   demarrerQuiz() {
     // Afficher le panneau de début
-    // this.cacherPanneaux();
-    // this.afficherPanneau(this.panneauDebutHTML);
-    this.prochaineQuestion();
+    this.cacherPanneaux();
+    this.afficherPanneau(this.panneauDebutHTML);
   }
 
   prochaineQuestion() {
+    console.log("prochaineQuestion");
     // Afficher le panneau de question
+    this.cacherPanneaux();
+    this.afficherPanneau(this.panneauQuestionHTML);
     // Vérifier si c'est la dernière question
     // // Si oui, terminer le quiz
+
     // Sinon
     // // Récupérer la question suivante
+    console.log(this.indexQuestionActuelle);
+    let infosQuestion = this.questions[this.indexQuestionActuelle];
 
     // // Instancier une nouvelle question en passant la question actuelle au constructeur
     let conteneur = document.querySelector(".quiz-conteneur");
     let gabarit = document.querySelector("template#question");
-    let infosQuestion = questions[0];
     let instanceQuiz = this;
+
+    //Vide le HTML du conteneur
+    conteneur.innerHTML = "";
 
     this.questionActuelle = new Question(
       infosQuestion.question,
@@ -77,6 +84,7 @@ class Quiz {
       instanceQuiz
     );
     // // Avancer l'index de la question actuelle
+    this.indexQuestionActuelle++;
   }
 
   terminerQuiz() {

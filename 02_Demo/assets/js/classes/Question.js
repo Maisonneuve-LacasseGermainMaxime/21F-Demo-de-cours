@@ -16,11 +16,9 @@ class Question {
     this.quizParent = quizParent;
 
     let contexte = this;
+    this.verifierReponse = this.verifierReponse.bind(contexte);
     //Ajouter un écouteur d'événement global pour les boutons de réponse
-    this.conteneurHTML.addEventListener(
-      "click",
-      this.verifierReponse.bind(contexte)
-    );
+    this.conteneurHTML.addEventListener("click", this.verifierReponse);
 
     this.injecterHTML();
   }
@@ -60,25 +58,31 @@ class Question {
   verifierReponse(evenement) {
     let bouton = evenement.target;
     let reponse = bouton.textContent;
-
+    console.log(bouton, reponse);
     // Retirer l'écouteur d'événement des boutons
+    this.conteneurHTML.removeEventListener("click", this.verifierReponse);
+
     // Vérifier si la réponse est la bonne
     // Si oui, afficherBonneReponse()
     // Sinon, afficherErreur()
+    setTimeout(
+      function () {
+        this.quizParent.prochaineQuestion();
+      }.bind(this),
+      3000
+    );
   }
 
   afficherErreur() {
     // Mettre en évidence la mauvaise réponse
     // Mettre en évidence la bonne réponse
     // Attendre un délai et passer à la prochaine question (par le parent Quiz)
-    // this.quizParent.prochaineQuestion();
   }
 
   afficherBonneReponse() {
     // Mettre en évidence la bonne réponse
     // Mettre à jour le pointage
     // Attendre un délai et passer à la prochaine question
-    // this.quizParent.prochaineQuestion();
   }
 }
 

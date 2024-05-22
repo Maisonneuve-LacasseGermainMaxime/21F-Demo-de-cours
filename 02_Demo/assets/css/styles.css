@@ -45,12 +45,24 @@
   0% {
     opacity: 0;
   }
+  20% {
+    opacity: 0.2;
+    /* transform: scale(1.1); */
+  }
   100% {
     opacity: 1;
+    /* transform: scale(1) rotate(360deg); */
   }
 }
-
+/* .button{
+  color:red;
+  transition: color 450ms;
+}
+.button:hover {
+  color:blue;
+} */
 .animTitreFadeIn {
+  /* color:blue; */
   animation: fadeInTitre 5000ms forwards;
 }
 

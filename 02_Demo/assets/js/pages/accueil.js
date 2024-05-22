@@ -23,6 +23,8 @@ const detailGenre = detailHTML.querySelector(".detail__genre");
  */
 function init() {
   // const modale1 = new Modale("Boite 1", "Message 1");
+  // modale1.afficher();
+  // console.log(modale1);
   // const modale2 = new Modale("Boite 2", "Message 2");
   // console.log(modale1);
 

@@ -7,7 +7,7 @@ class Modale {
     this.conteneurHTML = document.body;
 
     this.injecterHTML();
-    this.afficher();
+    // this.afficher();
   }
 
   injecterHTML() {
