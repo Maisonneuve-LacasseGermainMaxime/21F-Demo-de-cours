@@ -15,4 +15,4 @@ Un indice: vous voulez cherchez quelque chose en lien avec la méthode `normaliz
 
 ### Défi 2
 
-Au survol d'un lien, afficher le contenu de l'attribut href dans la console.
+Au survol d'un lien, afficher le contenu de l'attribut href dans la console. Trouvez l'événement à utiliser pour faire cela.
