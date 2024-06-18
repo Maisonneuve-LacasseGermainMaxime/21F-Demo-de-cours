@@ -10,7 +10,6 @@
 // Copier un tableau
 
 //==================
-// Live share - 20 min
 const nomsAlbums = ["Rumours", "Back in Black", "The Dark Side of the Moon", "Nevermind", "The Doors", "Mezzanine"];
 const prix = [15, 30, 15, 40, 18, 15];
 

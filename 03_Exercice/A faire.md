@@ -12,4 +12,5 @@ Vous devez modifier plusieurs éléments HTML à partir d'un tableau de données
 
 4. Créez une fonction `initialiser` qui sera appelée au chargement de la page. Appelez la fonction
    `afficherAlbums` avec le tableau d'albums et la liste d'éléments HTML.
+
 5. Au clic du bouton, triez les albums par ordre alphabétique et réaffichez-les dans la page.
