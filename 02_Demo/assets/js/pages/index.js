@@ -110,3 +110,4 @@ let etudiants = [
 // Créer une fonction qui affiche la liste des étudiants dans un conteneur HTML
 // Appeler la fonction pour afficher la liste des étudiants au chargement de la page
 // Au clic d'une div étudiant, afficher les résultats et la moyenne de l'étudiant dans la console
+// Au clic du bouton, supprimer le dernier étudiant de la liste et afficher la nouvelle liste
